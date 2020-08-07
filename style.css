@@ -139,41 +139,26 @@ body {
 	border-radius: 50%
 }
 
-.hour {
-	position: absolute;
-	width: 5px;
-	height: 150px;
-	background-color: #18161F;
-	bottom: 50%;
-	transform-origin: bottom;
-	transform: rotate(150deg);
-	border-top-left-radius: 30%;
-	border-top-right-radius: 30%;
+.hand {
+  position: absolute;
+  background-color: #18161F;
+  bottom: 50%;
+  transform-origin: bottom;
+  border-top-left-radius: 30%;
+  border-top-right-radius: 30%;
 }
 
+.hour {
+	width: 5px;
+  height: 150px;
+  }
+
 .minute {
-	position: absolute;
 	width: 4px;
-	height: 180px;
-	background-color: #18161F;
-	bottom: 50%;
-	transform-origin: bottom;
-	transform: rotate(30deg);
-	border-top-left-radius: 30%;
-	border-top-right-radius: 30%;
+  height: 180px;
 }
 
 .second {
-	position: absolute;
 	width: 2px;
-	height: 210px;
-	background-color: #18161F;
-	bottom: 50%;
-	transform-origin: bottom;
-	transform: rotate(100deg);
-	border-top-left-radius: 30%;
-	border-top-right-radius: 30%;
+  height: 220px;
 }
-
-
-
