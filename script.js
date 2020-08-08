@@ -7,6 +7,16 @@ function clockWorking() {
   var seconds = date.getSeconds();
   var minutes = date.getMinutes();
   var hours = date.getHours();
+
+  var secDegrees = seconds / 60 * 360;
+  var minDegrees = (minutes * 6) + (seconds * 0.1);
+  var hrDegrees = (minutes / 2) + ((hours / 12) * 360);
+
+  sec.style.transform = 'rotate(' + secDegrees + 'deg)';
+  min.style.transform = 'rotate(' + minDegrees + 'deg)';
+  hr.style.transform = 'rotate(' + hrDegrees + 'deg)';
 }
+
+setInterval(clockWorking, 1000);
 
 clockWorking();
