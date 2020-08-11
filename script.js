@@ -8,7 +8,9 @@ function clockWorking() {
   var minutes = date.getMinutes();
   var hours = date.getHours();
 
-  var secDegrees = seconds / 60 * 360;
+  const secondsXminutes = 60;
+
+  var secDegrees = seconds / secondsXminutes * 360;
   var minDegrees = (minutes * 6) + (seconds * 0.1);
   var hrDegrees = (minutes / 2) + ((hours / 12) * 360);
 
